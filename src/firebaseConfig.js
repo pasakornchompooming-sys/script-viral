@@ -32,6 +32,10 @@ const googleProvider = new GoogleAuthProvider();
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
 const ai = new GoogleGenerativeAI(GEMINI_API_KEY);
 
+// แก้ไขเป็นชื่อใหม่
+const apiKey = import.meta.env.VITE_GEMINI_PROD_KEY;
+
+
 // AI wrapper
 export const generateContent = async ({ prompt, responseMimeType, responseSchema }) => {
   const MAX_API_RETRIES = 3;
