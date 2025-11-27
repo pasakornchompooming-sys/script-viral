@@ -472,10 +472,7 @@ const App = () => {
     const selectedModel = "gemini-2.0-flash"; 
     
     // 🔑 ใช้ VITE_GEMINI_API_KEY เท่านั้น
-    // const apiKey = import.meta.env.VITE_GEMINI_API_KEY; 
-
-    // แก้ไขเป็นชื่อใหม่
-    const apiKey = import.meta.env.VITE_GEMINI_PROD_KEY;
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY; 
     
     // 💡 ตัวช่วยตรวจสอบ: แสดงผลใน console เมื่อ component ถูกโหลด
     useEffect(() => {
